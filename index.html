@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="EduFoundation – Empowering underprivileged children through education initiatives and community-driven programs. Volunteer to make a difference today.">
+  <meta name="keywords" content="NGO, education, volunteering, children, community, non-profit">
+  <meta property="og:title" content="EduFoundation – Education for Every Child">
+  <meta property="og:description" content="Join EduFoundation to empower underprivileged children through community-driven education programs.">
+  <meta property="og:image" content="bache.jpg">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="favicon.ico">
+  <title>EduFoundation</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@100..900&family=Rakkas&family=Style+Script&display=swap" rel="stylesheet">
+  <style>
+    .font-display { font-family: 'Style Script', serif; }
+    .font-handwriting { font-family: 'Noto Sans Mono', cursive; }
+    .font-title{ font-family: "Rakkas", serif }
+
+    html {
+    scroll-behavior: smooth;
+  }
+
+    .navbar {
+      background-color: rgba(0, 0, 0, 0.5); 
+    }
+
+    #home {
+        min-height: 100vh; 
+        background-image: url('bache.jpg');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        position: relative;      
+      }
+
+    .hero-overlay {
+      background: rgba(0, 0, 0, 0.7);
+      width: 100%;
+      height: 100%;
+    }
+  
+
+  </style>
+  
+</head>
+<body class="dark:bg-dark-900 bg-dark-900 text-white font-sans">
+
+    <!--Skip to content-->
+    <a href="#home" 
+      class="sr-only focus:not-sr-only fixed top-2 left-2 bg-teal-500 text-white px-3 py-1 rounded-md z-50">
+      Skip to content
+    </a>
+
+  <!-- Navbar -->
+  <header class="fixed top-0 w-full z-50 bg-gray-950/40 backdrop-blur-md">
+  <nav class="max-w-7xl mx-auto px-4 py-3 flex justify-between items-center relative">
+    <div class="text-xl font-bold font-handwriting ">EduFoundation</div>
+    
+    <!-- Desktop menu -->
+    <div class="hidden md:block">
+      <div class="ml-10 flex items-baseline space-x-8">
+        <a href="#home" class="nav-link font-handwriting text-gray-300 hover:text-teal-400 px-3 py-2 text-sm font-medium transition">Home</a>
+        <a href="#about" class="nav-link font-handwriting text-gray-300 hover:text-teal-400 px-3 py-2 text-sm font-medium transition">About</a>
+        <a href="#volunteer" class="nav-link font-handwriting text-gray-300 hover:text-teal-400 px-3 py-2 text-sm font-medium transition">Volunteer</a>
+      </div>
+    </div>            
+
+    <!-- Mobile menu button -->
+    <div class="md:hidden relative">
+      <button id="mobile-menu-btn" class="text-gray-300 hover:text-teal-400 focus:outline-none">
+        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+        </svg>
+      </button>
+
+      <!-- Floating bubble menu -->
+      <div id="mobile-menu" class="hidden absolute right-0 mt-3 w-40 bg-gray-700 rounded-lg shadow-lg border border-gray-600">
+        <a href="#home" class="block font-handwriting px-4 py-2 text-gray-200 hover:bg-gray-600 rounded-t-lg">Home</a>
+        <a href="#about" class="block font-handwriting px-4 py-2 text-gray-200 hover:bg-gray-600">About</a>
+        <a href="#volunteer" class="block font-handwriting px-4 py-2 text-gray-200 hover:bg-gray-600 rounded-b-lg">Volunteer</a>
+      </div>
+    </div>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home" class="relative min-h-screen flex flex-col justify-center items-center text-center px-6 ">
+    
+    <div class="hero-overlay absolute inset-0"></div>
+
+    <div class="relative z-10 translate-y-10 transition-all duration-700 " data-animate>
+    <h1 class="text-5xl md:text-7xl font-semibold font-display mb-4">Education for Every Child</h1>
+    <p class="text-sm md:text-lg mb-6 max-w-xl text-gray-300 font-handwriting">
+      Empowering communities through grassroots learning and spreading hope for a brighter tomorrow.
+    </p>
+
+    <a href="#volunteer" 
+      class=" bg-none text-sm md:text-lg font-bold font-handwriting border-2 hover:bg-teal-600 hover:bg-opacity-50 text-white px-4 py-2 rounded-lg 
+              transition-all duration-300 transform hover:scale-105 hover:shadow-xl shadow-lg inline-block">
+      Volunteer Today !
+    </a>
+
+    </div>
+  </section>
+
+
+  <!--About us-->
+  <section id="about" class="py-16 px-6 bg-black relative">
+  <div class="absolute inset-0 bg-[url('avout.jpg')] bg-cover bg-center opacity-40"></div>
+    <div class="absolute inset-0 bg-black bg-opacity-60"></div>
+  <!-- Content Wrapper -->
+  <div class="relative max-w-6xl mx-auto space-y-12">
+    
+    <!-- Top Part: About Text + Stats + Image -->
+    <div class="grid md:grid-cols-2 gap-10 items-center">
+      
+      <!-- Text Content -->
+      <div class="text-center md:text-left opacity-0 translate-y-10 transition-all duration-700" data-animate>
+        <h2 class="font-title text-3xl sm:text-4xl font-bold mb-2 text-white">About Us</h2>
+        <p class="text-teal-400 font-handwriting text-xs md:text-sm italic mb-4">
+          Empowering children through education and community-driven initiatives.
+        </p>
+        <p class="font-handwriting text-xs md:text-sm text-gray-300 leading-relaxed mb-6">
+          We are a community-driven NGO working to provide education and resources to children in underserved areas.
+          Our mission is to create opportunities, inspire learning, and transform lives through simple yet impactful initiatives.
+        </p>
+
+        <!-- Stats Row -->
+        <div class="flex space-x-8 justify-center md:justify-start">
+          <div>
+            <p class="font-title text-3xl sm:text-4xl text-teal-400" data-count="100">0+</p> 
+            <p class="font-handwriting text-xs md:text-sm text-gray-400">Children Educated</p>
+          </div>
+          <div>
+            <p class="font-title text-3xl sm:text-4xl text-teal-400" data-count="20">0+</p>
+            <p class="font-handwriting text-xs md:text-sm text-gray-400">Community Volunteers</p>
+          </div>
+        </div>
+      </div>
+
+      <!--Image -->
+      <div class="flex justify-center opacity-0 translate-y-10 transition-all duration-700" data-animate>
+        <img src="about2.jpg" alt="About NGO" class="rounded-xl shadow-lg" loading="lazy">
+      </div>
+    </div>
+
+    <!-- Bottom Part: Cards -->
+    <div class="opacity-0 translate-y-10 transition-all duration-700" data-animate>
+      <h3 class="font-title text-3xl md:text-4xl font-semibold text-white text-center mb-8">Our Focus Areas</h3>
+      
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8">
+
+        
+        <!-- Card 1 -->
+        <div class="flex flex-col items-center p-4 lg:p-6 border-2 border-gray-700 rounded-3xl bg-neutral-900 hover:scale-105 transition-transform duration-300">
+
+          <img class="w-20 h-20 mb-3 rounded-full" src="dev.png" alt="Inclusive Education">
+          <p class="font-title text-2xl md:text-3xl text-teal-400">Inclusive Education</p>
+          <p class="mt-2 font-handwriting text-xs md:text-sm lg:text-base text-gray-300 leading-relaxed">
+            Equal learning opportunities for every child, ensuring no one is left behind.
+          </p>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="flex flex-col items-center p-4 lg:p-6 border-2 border-gray-700 rounded-3xl bg-neutral-900 hover:scale-105 transition-transform duration-300">
+
+          <img class="w-20 h-20 mb-3 rounded-full" src="comm.png" alt="Community Empowerment">
+          <p class="font-title text-2xl md:text-3xl text-teal-400">Community Empowerment</p>
+          <p class="mt-2 font-handwriting text-xs md:text-sm lg:text-base text-gray-300 leading-relaxed">
+            Working hand-in-hand with local communities to create lasting impact.
+          </p>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="flex flex-col items-center p-4 lg:p-6 border-2 border-gray-700 rounded-3xl bg-neutral-900 hover:scale-105 transition-transform duration-300">
+
+          <img class="w-20 h-20 mb-3 rounded-full" src="child.png" alt="Holistic Development">
+          <p class="font-title text-2xl md:text-3xl text-teal-400">Holistic Development</p>
+          <p class="mt-2 font-handwriting text-xs md:text-sm font-semibold text-gray-300 leading-relaxed">
+            Balancing academics, creativity, and life skills for all-round growth.
+          </p>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="flex flex-col items-center p-4 lg:p-6 border-2 border-gray-700 rounded-3xl bg-neutral-900 hover:scale-105 transition-transform duration-300">
+
+          <img class="w-20 h-20 mb-3 rounded-full" src="sustain.png" alt="Sustainability">
+          <p class="font-title text-2xl md:text-3xl text-teal-400">Sustainability</p>
+          <p class="mt-2 font-handwriting text-xs md:text-sm font-semibold text-gray-300 leading-relaxed">
+            Building long-term solutions that support children and communities.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<!--Form Section-->
+<!-- Volunteer Section -->
+<section id="volunteer" class="py-20 bg-black relative overflow-hidden">
+<div class="absolute inset-0 bg-[url('form.jpg')] bg-cover bg-center opacity-60"></div>
+<div class="absolute inset-0 bg-black bg-opacity-80"></div>
+
+  <!-- Content -->
+  <div class="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+    
+    <!-- Heading & Subtext -->
+    <div class="text-center mb-12 animate-on-scroll">
+      <h2 class="text-4xl md:text-5xl font-semibold font-display mb-6">
+        <span class="bg-gradient-to-r from-teal-400 to-teal-500 bg-clip-text text-transparent">
+          Make a Difference!
+        </span>
+      </h2>
+      <p class="font-handwriting text-sm md:text-lg text-gray-300 max-w-2xl mx-auto leading-tight">
+        Join our community of passionate educators and change-makers. Together, we can create lasting impact in children's lives.
+      </p>  
+    </div>
+
+    <!-- Form Card -->
+    <div class="max-w-2xl mx-auto animate-on-scroll">
+      <div class="rounded-2xl shadow-2xl p-8 border border-gray-700 bg-gray-800 bg-opacity-80">
+        <form id="volunteerForm" class="space-y-6">
+          
+          <!-- Name -->
+          <div>
+            <label for="name" class="block text-sm font-medium text-gray-300 mb-2">Full Name*</label>
+            <input type="text" id="name" name="name" required placeholder="Name"
+              class="w-full px-4 py-3 bg-gray-700 border border-gray-600 rounded-xl text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-teal-400 focus:border-transparent transition-all duration-300">
+          </div>
+
+          <!-- Email -->
+          <div>
+            <label for="email" class="block text-sm font-medium text-gray-300 mb-2">Email Address*</label>
+            <input type="email" id="email" name="email" required placeholder="Email"
+              class="w-full px-4 py-3 bg-gray-700 border border-gray-600 rounded-xl text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-teal-400 focus:border-transparent transition-all duration-300">
+          </div>
+
+          <!-- Phone -->
+          <div>
+            <label for="phone" class="block text-sm font-medium text-gray-300 mb-2">Phone Number</label>
+            <input type="tel" id="phone" name="phone"  placeholder="Phone Number"
+              class="w-full px-4 py-3 bg-gray-700 border border-gray-600 rounded-xl text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-teal-400 focus:border-transparent transition-all duration-300">
+          </div>
+
+          <!-- Reason -->
+          <div>
+            <label for="reason" class="block text-sm font-medium text-gray-300 mb-2">Why do you want to volunteer with us?*</label>
+            <textarea id="reason" name="reason" required rows="4"
+              placeholder="Share your motivation and how you'd like to contribute to our mission..."
+              class="w-full px-4 py-3 bg-gray-700 border border-gray-600 rounded-xl text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-teal-400 focus:border-transparent transition-all duration-300 resize-none"></textarea>
+          </div>
+
+          <!-- Submit Button -->
+          <button type="submit"
+            class="w-full bg-gradient-to-r from-teal-500 to-teal-600 hover:from-teal-600 hover:to-teal-700 text-white font-semibold py-4 px-6 rounded-xl transition-all duration-300 transform hover:scale-105 hover:shadow-xl shadow-lg group">
+            <span class="flex items-center justify-center">
+              Start Your Journey
+              <svg class="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path>
+              </svg>
+            </span>
+          </button>
+
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<footer class="font-handwriting bg-black  py-10 opacity-0 translate-y-10 transition-all duration-700" data-animate>
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="grid gap-8 text-center md:text-left md:grid-cols-3">
+      
+      <!-- Logo + Description -->
+      <div class="space-y-3">
+        <a href="#home" class="text-2xl font-bold bg-gradient-to-r from-teal-400 to-teal-500 bg-clip-text text-transparent hover:scale-105 transition-transform inline-block">
+          EduFoundation
+        </a>
+        <p class="text-sm text-gray-400 leading-relaxed max-w-xs mx-auto md:mx-0">
+          Empowering underprivileged children through community-driven education initiatives. 
+          Building brighter futures, one child at a time.
+        </p>
+      </div>
+
+      <!-- Contact Info -->
+      <div class="space-y-2">
+        <h3 class="text-lg font-semibold text-white">Get in Touch</h3>
+        <address class="not-italic text-sm text-gray-400 leading-tight">
+          <p><a href="mailto:hello@edufoundation.org">📧 hello@edufoundation.org</a></p>
+          <p><a href="tel:+919876543210">📞 +91 98765 43210</a></p>
+          <p>📍 Community Center, Local Area</p>
+        </address>
+      </div>
+
+      <!-- Social Links -->
+      <div class="space-y-3">
+        <h3 class="text-lg font-semibold text-white">Follow Us</h3>
+        <div class="flex justify-center md:justify-start space-x-4">
+          <a href="#" aria-label="Follow us on Facebook" class="w-10 h-10 bg-gray-700 rounded-lg flex items-center justify-center text-gray-400 hover:text-teal-400 hover:bg-gray-600 transition-all duration-300">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+          <a href="#" aria-label="Follow us on Twitter" class="w-10 h-10 bg-gray-700 rounded-lg flex items-center justify-center text-gray-400 hover:text-white hover:shadow-[0_0_10px_#14b8a6] hover:bg-gray-600 transition-all duration-300">
+            <i class="fab fa-twitter"></i>
+          </a>
+          <a href="#" aria-label="Follow us on Instagram" class="w-10 h-10 bg-gray-700 rounded-lg flex items-center justify-center text-gray-400 hover:text-white hover:shadow-[0_0_10px_#14b8a6] hover:bg-gray-600 transition-all duration-300">
+            <i class="fab fa-instagram"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="pt-6 text-center text-gray-400 text-sm">
+      <p>&copy; 2025 EduFoundation. Spreading hope through education.</p>
+    </div>
+  </div>
+</footer>
+
+    <script>
+    
+      // Toggle mobile bubble menu
+      const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+      const mobileMenu = document.getElementById('mobile-menu');
+      
+      mobileMenuBtn.addEventListener('click', () => {
+        mobileMenu.classList.toggle('hidden');
+      });
+
+      // Hide menu on link click
+      document.querySelectorAll('#mobile-menu a').forEach(link => {
+        link.addEventListener('click', () => {
+          mobileMenu.classList.add('hidden');
+        });
+      });
+
+      // Smooth scroll
+      document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+          e.preventDefault();
+          const target = document.querySelector(this.getAttribute('href'));
+          if (target) {
+            target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+          }
+        });
+      });
+
+      //scroll down animations
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('opacity-100', 'translate-y-0');
+            entry.target.classList.remove('opacity-0', 'translate-y-10');
+          }
+        });
+      }, { threshold: 0.2 });
+
+      document.querySelectorAll('[data-animate]').forEach(el => observer.observe(el));
+
+    //formm
+    document.addEventListener("DOMContentLoaded", () => {
+    const form = document.getElementById("volunteerForm");
+
+    form.addEventListener("submit", (e) => {
+        e.preventDefault(); // Stop page reload
+
+        const formData = new FormData(form);
+        console.log("Form Submitted:", Object.fromEntries(formData.entries()));
+
+        // Show temporary success message
+        alert("Thank you for volunteering! We'll reach out soon.");
+
+        // Reset form
+        form.reset();
+    });
+    });
+
+    //counter
+    const counters = document.querySelectorAll('[data-count]');
+    const duration = 2000; // total duration in ms (2s)
+
+    const countObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          const counter = entry.target;
+          const target = +counter.getAttribute('data-count');
+          let count = 0;
+
+          const increment = target / (duration / 16); // ~60fps
+
+          const updateCount = () => {
+            count += increment;
+            if (count < target) {
+              counter.textContent = Math.floor(count) + '+';
+              requestAnimationFrame(updateCount);
+            } else {  
+              counter.textContent = target + '+';
+            }
+          };
+
+          updateCount();
+          countObserver.unobserve(counter);
+        }
+      });
+    }, { threshold: 0.5 });
+
+    counters.forEach(counter => countObserver.observe(counter));
+  </script>
+
+</body>
+</html>
